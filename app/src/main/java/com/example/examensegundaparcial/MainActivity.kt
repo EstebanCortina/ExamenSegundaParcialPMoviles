@@ -1,4 +1,5 @@
 package com.example.examensegundaparcial
+import com.example.examensegundaparcial.CustomListAdapter
 
 import android.content.ContentValues
 import android.content.Context
@@ -224,7 +225,7 @@ class MainActivity : AppCompatActivity() {
     //Actualiza el list View para ver las frutas
     private fun updateListView(){
         val listView2 = findViewById<ListView>(R.id.listView)
-        val newAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, items)
+        val newAdapter = CustomListAdapter(this, R.layout.list_item_custom, items)
         listView2.adapter = newAdapter
         newAdapter.notifyDataSetChanged()
         registerForContextMenu(listView2)
