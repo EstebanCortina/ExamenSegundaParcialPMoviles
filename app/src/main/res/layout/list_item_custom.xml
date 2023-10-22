@@ -12,8 +12,8 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="80dp"
-            android:layout_height="88dp"
+            android:layout_width="104dp"
+            android:layout_height="137dp"
             android:scaleType="centerCrop"
             android:src="@drawable/placeholder_image" />
 
@@ -25,20 +25,42 @@
             android:paddingStart="16dp">
 
             <TextView
+                android:id="@+id/etId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Id: " />
+
+            <TextView
                 android:id="@+id/nombreTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nombre del producto"
+                android:text="Nombre: "
                 android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/descripcionTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Descripción del producto"
+                android:text="Descripción: "
                 android:textSize="14sp" />
 
-            <!-- Agrega vistas adicionales aquí, como precio, cantidad, etc. -->
+            <TextView
+                android:id="@+id/etListCantidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cantidad: " />
+
+            <TextView
+                android:id="@+id/etListPrecioCosto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Precio Costo: " />
+
+            <TextView
+                android:id="@+id/etListPrecioVenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Precio Venta: " />
 
         </LinearLayout>
     </LinearLayout>
